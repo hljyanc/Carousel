@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css">   
+   
+    
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-main">
+            <div class="arrow-group">
+                <a href="" class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a href="" class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+            <div class="img-container">    
+                <div class="display-img">
+                    <img src="images/xps-2L-0vnCnzcU-unsplash.jpg" alt="">
+                </div>
+                <div class="display-img">
+                    <img src="images/xps-g2E2NQ5SWSU-unsplash.jpg" alt="">
+                </div> 
+                <div class="display-img">
+                    <img src="images/xps-TxXuh_hAFd8-unsplash.jpg" alt="">
+                </div>   
+            </div>
+        </div>
+        <div class="nav-group">
+            <span class="dot" onclick="displaySlide(1)"></span>
+            <span class="dot" onclick="displaySlide(2)"></span>
+            <span class="dot" onclick="displaySlide(3)"></span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
