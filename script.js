@@ -1,9 +1,7 @@
 let slideIndex = 1;
 const totalSlide = 3;
 const slideName = "slide";
-
 let dots = document.getElementsByClassName("dot");
-
 autoRun();
 
  //Change image src to display and update the dot style
@@ -11,6 +9,7 @@ function currentSlide(){
     document.getElementById("display-img").src = "images/"+ slideName + slideIndex + ".jpg";
     for( let i = 0; i<totalSlide; i++){
         if(i === slideIndex-1){
+
             dots[i].classList.add("active");
   
         }else{
@@ -20,9 +19,7 @@ function currentSlide(){
 }
 
 
-
 function displaySlide (n) {
-
     //Reassign slideIndex value
     if( n > totalSlide){
         slideIndex = 1;
@@ -31,7 +28,7 @@ function displaySlide (n) {
     } else{
         slideIndex = n;
     } 
-
+  
     currentSlide();
 }
 
@@ -49,3 +46,4 @@ function autoRun(){
     currentSlide();
     setTimeout(autoRun, 2000);
 }
+
